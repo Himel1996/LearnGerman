@@ -1,5 +1,9 @@
 import { sql } from '@vercel/postgres';
 
+// @vercel/postgres automatically uses POSTGRES_URL or DATABASE_URL
+// If using Neon or other providers, ensure the connection string is set as POSTGRES_URL
+// or DATABASE_URL in your Vercel environment variables
+
 export interface FeedbackEntry {
   id?: number;
   name: string | null;
