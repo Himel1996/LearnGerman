@@ -5,6 +5,11 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Learn German',
   description: 'Translate to German and analyze German text',
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -14,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/png" href="/icon.png" />
+      </head>
       <body className="min-h-screen bg-gradient-to-br from-blue-50 via-sky-50 via-cyan-50 to-teal-50 relative overflow-x-hidden pb-16">
         {/* Animated background elements */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
